@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./game-hub.css";
 
 export const metadata: Metadata = {
   title: "Gọi tên lớp học",

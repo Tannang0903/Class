@@ -1,6 +1,6 @@
 # Gọi Tên Lớp Học
 
-Ứng dụng Next.js cho giáo viên: đăng nhập bằng Google, quản lý lớp và học sinh. Trò chơi gọi tên và nâng cấp gói sẽ được bổ sung sau.
+Ứng dụng Next.js cho giáo viên: đăng nhập bằng Google, quản lý lớp và học sinh, chơi Ếch Đớp Bọ và UFO Khảo Bài với danh sách của lớp đã chọn. Nâng cấp gói sẽ được bổ sung sau.
 
 ## Yêu cầu
 
@@ -34,5 +34,19 @@ pnpm dev
 ```
 
 Mở `http://localhost:3000`. Khi triển khai, đặt cùng các biến môi trường trên máy chủ và đổi `AUTH_URL` thành URL HTTPS công khai.
+
+## Trò chơi gọi tên
+
+Vào **Trò chơi gọi tên**, chọn Ếch Đớp Bọ hoặc UFO Khảo Bài, chọn lớp đã có học sinh rồi bấm **Bắt đầu chơi**. Danh sách học sinh được tải từ API của lớp khi bắt đầu ván. Ếch Đớp Bọ cần ít nhất hai học sinh; UFO Khảo Bài có thể chơi với một học sinh.
+
+Nguồn của hai trò chơi nằm trong `games/frog` và `games/ufo`. Bản đã biên dịch nằm trong `public/games` để Next.js và Vercel phục vụ trực tiếp. Sau khi sửa mã nguồn trò chơi, chạy:
+
+```bash
+npm install --prefix games
+npm run check --prefix games
+npm run build --prefix games
+```
+
+Commit cả mã nguồn và bản đã biên dịch trong `public/games` để bản deploy dùng phiên bản mới nhất.
 
 Không đưa `.env.local` hoặc connection string lên Git. Nếu Client Secret đã lộ, hãy tạo secret mới trong Google Cloud trước khi công khai ứng dụng.

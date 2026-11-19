@@ -1,0 +1,9 @@
+node_modules
+.next
+.env.local
+data/*.db*
+*.tsbuildinfo
+.pnpm-store
+.vercel
+.env*
+!.env.example

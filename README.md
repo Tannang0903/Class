@@ -2,6 +2,8 @@
 
 Ứng dụng Next.js cho giáo viên: đăng nhập bằng Google, quản lý lớp và học sinh, chơi Ếch Đớp Bọ và UFO Khảo Bài với danh sách của lớp đã chọn. Nâng cấp gói sẽ được bổ sung sau.
 
+Khi tạo lớp, nhập sĩ số để ứng dụng tạo sẵn `HS số 1` đến `HS số N`. Vào **Tùy chọn → Chỉnh sửa lớp** để đổi sĩ số. Tăng sĩ số sẽ thêm học sinh mẫu; giảm sĩ số sẽ xóa học sinh cuối danh sách sau khi xác nhận. Dùng **Cập nhật danh sách** để dán toàn bộ tên, mỗi dòng một học sinh, hoặc dùng nút bút chì ở từng dòng để sửa riêng một tên. Số thứ tự được giữ nguyên.
+
 ## Yêu cầu
 
 - Node.js 20 trở lên và pnpm
